@@ -1,0 +1,31 @@
+Cisco Packet Tracer..
+
+basic setup..
+
+# Router Confoguration Setups. #
+
+Commands for starting the router.. < IP Vlaue needs to be set correctly>.
+
+en
+#conf t
+configuration commands, one per line. End with CNTL/Z.
+#interface gigabitEthernet 0/0
+#ip address 192.168.1.1 255.255.255.0
+no shutdown
+#
+5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+ROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+#
+
+
+Router(config)#
+Router(config)#interface gigabitEthernet 0/1
+Router(config-if)#ip address 192.168.2.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Router(config-if)#end
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+Router#
